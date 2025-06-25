@@ -1,0 +1,52 @@
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #45200a ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .confirmation-container  {
+      background-color: #f68712;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .confirmation-container h2 {
+      margin-bottom: 20px;
+      color: #45200a;
+      text-shadow: 2px 2px 3px white;
+    }
+
+    .confirmation-container button {
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 35%;
+    }
+
+    .btn-oui {
+      background-color: #45200a;
+      color: white;
+    }
+
+    .btn-non  {
+      background-color: #f68712;
+      color: white;
+      border: none;
+      border: 2px solid #45200a;
+      box-shadow: 1px 1px 1px ;
+    }
+
+    .btn-oui :hover {
+       background-color: #f68712;
+         border: 2px solid #45200a;
+    }
+    .btn-non:hover{
+       background-color: #45200a;
+    }

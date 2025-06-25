@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="checkout.css">
+  <title>Confirmation Déconnexion</title>
+</head>
+<body>
+
+  <div class="confirmation-container">
+    <h2>Voulez-vous vraiment vous déconnecter ?</h2>
+    <button class="btn-oui" onclick="seDeconnecter()">Oui</button>
+    <button class="btn-non" onclick="annuler()">Non</button>
+  </div>
+
+  <script>
+    function seDeconnecter() {
+      alert("Déconnexion en cours...");
+      // Tu peux ici rediriger vers une page d'accueil ou faire un logout réel
+      // Exemple :
+      // window.location.href = "page_accueil.html";
+    }
+
+    function annuler() {
+      alert("Déconnexion annulée.");
+      // Tu peux retourner à la page précédente ou vers un tableau de bord
+      // Exemple :
+      // window.location.href = "dashboard.html";
+    }
+  </script>
+
+</body>
+</html>
+
