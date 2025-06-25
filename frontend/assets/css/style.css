@@ -1,3 +1,9 @@
+body { 
+      background-color: #ffffff;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding-bottom: 80px;
+    }
 header {
     position: sticky;
     top: 0;
@@ -14,6 +20,24 @@ header {
   padding: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+.section-acceuil {
+    display: flex;
+      justify-content: center;
+}
+.video-background {
+      
+      position: relative;
+      top: -10px;
+      left: 0;
+      width: 90%;
+      height: 500px;
+      object-fit: cover;
+      z-index: -1;
+      border-radius: 30px;
+
+    }
+
+
 .nav-afric ul li a:hover {
   border-bottom: #45200a 2px solid;
 }
@@ -63,6 +87,12 @@ h3{
   font-size: 20px;
 
 }
+h4{
+  color: rgba(255, 145, 0, 1);
+  font-weight: bold;
+  font-size: 20px;
+
+}
 
 .testimonial-author {
   font-weight: bold;
@@ -87,4 +117,58 @@ h3{
   height: 200px;
   object-fit: cover;
 }
+.gallery-image p {
+  color: #45200a;
+}
+
+    
+    .card-custom, .profile-header, .voucher-box, .favorite-card {
+      background-color: #f68712;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .btn-green {
+      background-color: #45200a;
+      border: none;
+      color: white;
+      border-radius: 15px;
+    }
+    .bottom-nav {
+      background-color: #1e1e1e;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
+      z-index: 1000;
+    }
+    .bottom-nav i {
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+    .active-icon {
+      color: #12d18e;
+    }
+    @keyframes change {
+  0% {
+      position: relative;
+      top: 30px;
+  }
+  50% {
+    position: relative;
+    top: 50px;
+  }
+  100% {
+    position: relative;
+    top: 30px;
+  }
+}
+
 
