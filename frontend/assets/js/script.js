@@ -1,1 +1,6 @@
-// Script JS principal
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 2000); // disparait après 2 secondes
+});
