@@ -7,7 +7,7 @@
     <title>Food Delivery</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!--  CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -27,44 +27,112 @@
 
     <!-- Section principale -->
     <main class="container mt-5">
+
+
         <h2 class="mb-4">Restaurants Populaires</h2>
+        <div id="carouselRestaurants" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Les restaurants populaires -->
-            <div class="col">
-                <div class="card">
-                    <img src="..\Images\resto1.JPG" class="card-img-top " alt="Restaurant">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger Paradise</h5>
-                        <p class="card-text">⭐ 4.8 - Livraison gratuite</p>
-                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../frontend/assets/images/resto1.JPG" class="card-img-top"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Burger Paradise</h5>
+                                        <p class="card-text">⭐ 4.8 - Livraison gratuite</p>
+                                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ajoute 2 cartes supplémentaires ici (total : 3 cartes par slide) -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../frontend/assets/images/resto1.JPG" class="card-img-top"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Burger Palace</h5>
+                                        <p class="card-text">⭐ 4.7 - Livraison 1000 FCFA</p>
+                                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../frontend/assets/images/resto1.JPG" class="card-img-top"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tasty Grill</h5>
+                                        <p class="card-text">⭐ 4.9 - Livraison rapide</p>
+                                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col">
-                <div class="card">
-                    <img src="..\Images\resto1.JPG" class="card-img-top " alt="Restaurant">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger Paradise</h5>
-                        <p class="card-text">⭐ 4.8 - Livraison gratuite</p>
-                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../frontend/assets/images/resto1.JPG" class="card-img-top"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pizza Nova</h5>
+                                        <p class="card-text">⭐ 4.6 - Livraison gratuite</p>
+                                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Deux autres cartes ici -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../frontend/assets/images/resto1.JPG" class="card-img-top"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chez Maman</h5>
+                                        <p class="card-text">⭐ 5.0 - Cuisine locale</p>
+                                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../frontend/assets/images/resto1.JPG" class="card-img-top"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fast Lunch</h5>
+                                        <p class="card-text">⭐ 4.3 - Livraison express</p>
+                                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-            <div class="col">
-                <div class="card">
-                    <img src="..\Images\resto1.JPG" class="card-img-top " alt="Restaurant">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger Paradise</h5>
-                        <p class="card-text">⭐ 4.8 - Livraison gratuite</p>
-                        <a href="#" class="btn btn-primary">Voir le menu</a>
-                    </div>
-                </div>
-            </div>
-
+            <!-- Contrôles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRestaurants"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselRestaurants"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
+
+
+
+
     </main>
 
     <!-- Footer -->

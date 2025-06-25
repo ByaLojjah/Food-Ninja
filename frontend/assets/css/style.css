@@ -1,3 +1,32 @@
+
+.rotate-logo {
+    animation: imgRotate 10s linear infinite;
+}
+
+@keyframes imgRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    background-color: #f68712 !important;
+}
+
+.social-icon:hover {
+    color: maroon !important;
+    border-color: maroon !important;
+}
+
+.text-maroon {
+    color: maroon;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.text-maroon:hover {
+    color: white;
+=======
 /* Styles personnalisés */
 body {
     background-color: #000;
@@ -95,4 +124,5 @@ small.text-muted {
     background-color: transparent;
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out
+
 }

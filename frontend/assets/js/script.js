@@ -1,3 +1,9 @@
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 2000); // disparait après 2 secondes
 // Script JS principal
 let quantities = [1, 1, 1];
 let itemPrices = [6000, 10000, 9000]; 
@@ -73,4 +79,5 @@ const notifications = document.querySelectorAll('.notification');
 const backButton = document.querySelector('.btn.btn-dark');
     backButton.addEventListener('click', () => {
     alert("Vous avez cliqué sur la flèche gauche !");
+
 });
