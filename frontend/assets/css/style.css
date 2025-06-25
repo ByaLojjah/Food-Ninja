@@ -1,1 +1,36 @@
-/* Styles personnalisés */
+body{
+    background-color: #45200a;
+}
+.button{
+
+    align-items: center;
+    justify-content: center;
+        display: flex;
+        color: #45200a;
+        padding: 30px;
+}
+button{
+    color:#45200a  ;
+    background-color:#f68712;
+    border: none;
+    border-radius: 10px;     
+    font-size: 25px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #45200a;
+    color: #f68712;
+}
+h1{
+    text-align: center;
+    color: #f68712;
+    font-weight: bold;
+}
+.couleur{
+    background-color: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+.couleur:hover{
+    background-color: rgba(255,255,255,0.5);
+}
