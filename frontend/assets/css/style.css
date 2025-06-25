@@ -7,3 +7,22 @@
         transform: rotate(360deg);
     }
 }
+
+footer {
+    background-color: #f68712 !important;
+}
+
+.social-icon:hover {
+    color: maroon !important;
+    border-color: maroon !important;
+}
+
+.text-maroon {
+    color: maroon;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.text-maroon:hover {
+    color: white;
+}
