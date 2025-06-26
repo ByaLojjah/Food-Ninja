@@ -1,49 +1,66 @@
 // Script JS principal
-let quantities = [1, 1, 1];
-let itemPrices = [6000, 10000, 9000]; 
-const delivery = 1500;
-const discount = 500;
 
-function changeQty(index, change) {
-    quantities[index] += change;
-    if (quantities[index] < 1) {
-        quantities[index] = 1;
-    }
+const items = [
+  { price: 6000, qty: 1 }, 
+  { price: 7000, qty: 1 }, 
+  { price: 6000, qty: 1 }  
+];
 
-    document.getElementById(`qty${index}`).textContent = quantities[index];
 
-    const itemTotal = quantities[index] * itemPrices[index];
-    document.getElementById(`itemTotal${index}`).textContent = formatPrice(itemTotal);
+const livraison = 1500;
+const remise = 500;
 
-        
-    calculateTotal();
+
+function changeQty(index, delta) {
+  items[index].qty = Math.max(0, items[index].qty + delta); // autorise quantité à 0
+
+  document.getElementById('qty' + index).innerText = items[index].qty;
+    document.getElementById('itemTotal' + index).innerText =
+      (items[index].qty * items[index].price).toLocaleString() + 'f';
+
+    updateTotal();
 }
 
-function calculateTotal() {
-    let subtotal = 0;
 
-    for (let i = 0; i < quantities.length; i++) {
-        subtotal += quantities[i] * itemPrices[i];
-    }
 
-    const total = subtotal + delivery - discount;
+function updateTotal() {
+  let subtotal = 0;
+  items.forEach(item => {
+    subtotal += item.qty * item.price;
+  });
 
-        
-    document.getElementById("subtotal").textContent = formatPrice(subtotal);
-    document.getElementById("total").textContent = formatPrice(total);
+  const total = subtotal + livraison - remise;
+
+    
+  document.getElementById('subtotal').innerText = subtotal.toLocaleString() + 'f';
+  document.getElementById('total').innerText = total.toLocaleString() + 'f';
 }
 
-function formatPrice(price) {
-    return price.toLocaleString('fr-FR') + 'f'; 
+
+window.onload = updateTotal;
+
+function passerCommande() {
+  const quantites = [
+    parseInt(document.getElementById('qty0').innerText),
+      parseInt(document.getElementById('qty1').innerText),
+      parseInt(document.getElementById('qty2').innerText),
+    ];
+
+    // const commandeValidee = quantites.some(qty => qty > 0); 
+
+    // if (commandeValidee) {
+    //     alert("✅ Commande validée avec succès !");
+    // } else {
+    //     alert("❌ Commande non validée : aucune quantité sélectionnée.");
+    // }
+    if (commandeValidee) {
+      alert("✅ Commande validée avec succès !");
+      window.location.href = "page-paiement.html";
+    } else {
+      alert("❌ Commande non validée : aucune quantité sélectionnée.");
+    }
 }
 
-window.onload = () => {
-    for (let i = 0; i < quantities.length; i++) {
-        document.getElementById(`qty${i}`).textContent = quantities[i];
-        document.getElementById(`itemTotal${i}`).textContent = formatPrice(quantities[i] * itemPrices[i]);
-    }
-    calculateTotal();
-};
 
 const notifications = document.querySelectorAll('.notification');
   const modal = new bootstrap.Modal(document.getElementById('notifModal'));
