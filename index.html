@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reset Password UI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+ <div class="global">
+         <!-- PAGE 1 : Forgot password -->
+  <section class="screen">
+    <button class="back-btn"><i class="fa-solid fa-chevron-down"></i></button>
+    <h2>Forgot password?</h2>
+    <p>Select which contact details should we use to reset your password</p>
+
+    <div class="option sms">
+      <div class="icon">
+        <i class="fa-solid fa-comment"></i>
+      </div>
+      <p>Via sms: •••• 4235</p>
+    </div>
+
+    <div class="option email">
+      <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+      <p>Via email: ••••@gmail.com</p>
+    </div>
+
+    <button class="next-btn">Next</button>
+  </section>
+
+  <!-- PAGE 2 : New password -->
+  <section class="screen">
+    <button class="back-btn"><i class="fa-solid fa-chevron-down"></i></button>
+    <h2>Reset your password here</h2>
+    <p>Select which contact details should we use to reset your password</p>
+
+    <div class="flex">
+        <input type="password" placeholder="New Password" />
+        <i class="fa-solid fa-eye"></i>
+    </div>
+    <input type="password" placeholder="Confirm Password" />
+    
+    <button class="next-btn">Next</button>
+  </section>
+
+  <!-- PAGE 3 : Success -->
+  <section class="screen success">
+    <div class="checkmark"><i class="fa-solid fa-check"></i></div>
+    <h2>Congrats!</h2>
+    <p>Password reset successful</p>
+    <button class="next-btn">Back</button>
+  </section>
+
+  <!-- PAGE 4 : Home -->
+  <section class="screen home">
+    <h2>Find Your Favorite Food</h2>
+    <input class="search-bar" type="text" placeholder="What do you want to order?" />
+
+    <div class="banner">
+      <p>Special Deal For October</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="restaurant-list">
+      <h3>Nearest Restaurant</h3>
+      <div class="card">Vegan Resto<br><span>12 mins</span></div>
+      <div class="card">Healthy Food<br><span>8 mins</span></div>
+    </div>
+  </section>
+  
+ </div>
+</body>
+</html>

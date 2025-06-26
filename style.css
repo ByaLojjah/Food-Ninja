@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  
+}
+
+body {
+  background-color: white;
+  color: #45200a;
+  padding: 20px;
+}
+.global{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10PX;
+    
+}
+
+.screen {
+  max-width: 400px;
+  margin: auto;
+  background-color:white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 0.95em;
+  color:white;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: orange;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  background-color: #45200a;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.option .icon {
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+input[type="password"],
+.search-bar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #45200a;
+  color: whitesmoke;
+}
+
+.next-btn {
+  width: 100%;
+  padding: 12px;
+  background: #f68712;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.success {
+  text-align: center;
+}
+
+.checkmark {
+  font-size: 4em;
+  color: #f3bc09;
+  margin-bottom: 10px;
+}
+
+.home .banner {
+  background: #f68712;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  color: white;
+  text-align: center;
+}
+
+.home .banner button {
+  margin-top: 10px;
+  background-color: white;
+  color: #121212;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.restaurant-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+ 
+}
+
+.card {
+  background-color: #f68712;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1px;
+  text-align: center;
+  font-weight: bold;
+  color: #121212;
+}
+
+.card span {
+  display: block;
+  color: #f68712;
+  font-weight: normal;
+  font-size: 0.85em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+
+}
+.flex .fa-eye{
+   color:#f68712 ;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    }
