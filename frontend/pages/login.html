@@ -9,6 +9,11 @@
     <title>Document</title>
 </head>
 <body>
+  <video class="video-background-login" autoplay muted loop playsinline>
+    <source src="/frontend/assets/images/vid afric 2.mp4" type="video/mp4">
+    Ton navigateur ne supporte pas les vidéos HTML5.
+  </video>
+
   <div class="container mt-4">
 
   <!-- Page Inscription -->
@@ -17,27 +22,13 @@
   
   <form id="form-inscription" class="card p-4 card-custom">
     <div class="mb-3">
-      <label for="email" class="form-label text-white">Adresse Email</label>
-      <input type="email" class="form-control" id="email" required>
-    </div>
-    <div class="mb-2">
-      <label for="password" class="form-label text-white">Mot de passe</label>
-      <input type="password" class="form-control" id="password" required>
-    </div>
-    <div class="text-end mb-3">
-      <a href="#" class="text-decoration-none text-white-50" style="font-size: 0.9em;">Mot de passe oublié ?</a>
-    </div>
-    <button type="submit" class="btn btn-green w-100 mb-3">Se connecter</button>
-
-    <div class="text-center mb-2 text-white-50">Ou continuer avec</div>
+     
 
     <div class="d-flex justify-content-between">
-      <button type="button" class="btn btn-light w-100 me-2">
-        <i class="bi bi-google text-danger me-2"></i> Google
+      <button type="button" class="btn btn-light w-100 me-2" onclick="connexion()">
+        <i class="bi bi-google text-warning me-2"></i> Google
       </button>
-      <button type="button" class="btn btn-primary w-100 ms-2">
-        <i class="bi bi-facebook me-2"></i> Facebook
-      </button>
+      
     </div>
   </form>
 </div>
@@ -54,7 +45,7 @@
      <div class="container" style="justify-content: center; display: flex;"><img src="/image 40/1.png" alt=""  width="280" class="" style="object-fit: cover;"></div>
     <div class="card card-custom text-white text-center" >
       <div class="container mb-3" style="justify-content: center; display: flex;"><img src="/image 40/3.png" alt=""  width="400" class="" style="object-fit: cover;background-position-x: right;"></div>
-      <h4>find your comfort <br> Food here</h4>
+      <h4 class="text-white">find your comfort <br> Food here</h4>
       <p>Veuillez lire et accepter les conditions pour continuer.</p>
       <button class="btn btn-green w-100" onclick="allerAuxConditions2()">Next</button>
     </div>
@@ -179,7 +170,68 @@
     el.classList.add('active-icon');
   }
 </script>
-
+<script src=""></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+  import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+
+  // Config Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyChAbAMdoqTCyyzZYKf7dcV6KGp0FANVk0",
+    authDomain: "ninja-test-dc150.firebaseapp.com",
+    projectId: "ninja-test-dc150",
+    storageBucket: "ninja-test-dc150.appspot.com", // ✅ correction ici : "firebasestorage.app" -> "appspot.com"
+    messagingSenderId: "845687913271",
+    appId: "1:845687913271:web:8dcad1dceb0548635438b2",
+    measurementId: "G-L2BR0HJ3HZ"
+  };
+
+  // Initialisation Firebase
+  const app = initializeApp(firebaseConfig);
+//   const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+
+ window.connexion = function () {
+  const auth = getAuth();
+  const provider = new GoogleAuthProvider();
+
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      const user = result.user;
+
+      // Stocker une info dans localStorage pour la session
+      localStorage.setItem('kayagn_user', JSON.stringify({
+        uid: user.uid,
+        name: user.displayName,
+        email: user.email
+      }));
+
+      // Rediriger vers la page d'accueil
+      window.location.href = "settings.html.html";
+    })
+    .catch((error) => {
+      console.error("Erreur de connexion :", error);
+      alert("Erreur de connexion Google.");
+    });
+}
+
+  // // Fonction async pour ajouter un document
+//   async function addCity() {
+//     try {
+//       const docRef = await addDoc(collection(db, "ville"), {
+//         name: "Dakar",
+//         country: "Senegal"
+//       });
+//       console.log("Document written with ID: ", docRef.id);
+//     } catch (e) {
+//       console.error("Error adding document: ", e);
+//     }
+//   }
+
+//   addCity(); // Appel de la fonction
+</script>
 </body>
 </html>
