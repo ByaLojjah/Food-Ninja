@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: url('image\ foot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.contenu {
+    padding: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+.bien {
+    gap: 20px;
+    margin-top: 80px;
+    
+
+}  
+.bien h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 25px;
+}
+.bien p {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    padding-left: 60px;
+}
+button {
+    padding: 2px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10%;
+    margin-top: 20px;
+    
+}
+button:hover {
+    background-color: orange;
+    color: #fff;
+}
+.bien img{
+    width: 500px;
+}
+.promo{
+    background-image: url('https://th.bing.com/th/id/OIP.IZRN1CpYYs-vglk2GEBnXwHaE8?rs=1&pid=ImgDetMain&cb=idpwebpc2');
+    height: 150px;
+
+
+}
+.promo h2{
+    font-family: serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 55px;
+    text-align: center;
+    color: orange;
+}
