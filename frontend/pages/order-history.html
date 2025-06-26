@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail de la commande</title>
+    <link rel="stylesheet" href="/frontend/assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body style="background-color: #222;">
+
+    <section class="container p-3">
+        <h2 class="mb-4 fw-bold text-center text-white">Détail de la commande</h2>
+        <!-- Bloc 1 -->
+        <div class="order-card d-flex align-items-center mb-3 bg-warning p-2 rounded">
+            <img src="https://i.pinimg.com/736x/89/fd/e8/89fde8536b6c62bd9bf07bdb5e8c28fe.jpg" class="order-img me-3"
+                style="width:80px; height:80px; object-fit:cover;">
+            <div class="flex-grow-1">
+                <div class="fw-bold text-white">Afric Foodies</div>
+                <small class="text-white">Thiébou Dieune</small><br>
+                <span id="itemTotal0" class="price text-white">6 000f</span>
+            </div>
+            <div class="d-flex align-items-center ms-3">
+                <button class="btn btn-danger btn-sm me-2" onclick="changeQty(0, -1)">-</button>
+                <span id="qty0" class="text-white">1</span>
+                <button class="btn btn-success btn-sm ms-2" onclick="changeQty(0, 1)">+</button>
+            </div>
+        </div>
+        <!-- Bloc 2 -->
+        <div class="order-card d-flex align-items-center mb-3 bg-warning p-2 rounded">
+            <img src="https://i.pinimg.com/736x/24/55/99/245599c79618801f430109bb24e3c50b.jpg" class="order-img me-3"
+                style="width:80px; height:80px; object-fit:cover;">
+            <div class="flex-grow-1">
+                <div class="fw-bold text-white">Afric Foodies</div>
+                <small class="text-white">Yassa Poulet</small><br>
+                <span id="itemTotal1" class="price text-white">7 000f</span>
+            </div>
+            <div class="d-flex align-items-center ms-3">
+                <button class="btn btn-danger btn-sm me-2" onclick="changeQty(1, -1)">-</button>
+                <span id="qty1" class="text-white">1</span>
+                <button class="btn btn-success btn-sm ms-2" onclick="changeQty(1, 1)">+</button>
+            </div>
+        </div>
+        <!-- Bloc 3 -->
+        <div class="order-card d-flex align-items-center mb-3 bg-warning p-2 rounded">
+            <img src="https://i.pinimg.com/736x/c4/4b/6e/c44b6e9645b8c433a89437da1a43f22c.jpg" class="order-img me-3"
+                style="width:80px; height:80px; object-fit:cover;">
+            <div class="flex-grow-1">
+                <div class="fw-bold text-white">Afric Foodies</div>
+                <small class="text-white">Mafé</small><br>
+                <span id="itemTotal2" class="price text-white">6 000f</span>
+            </div>
+            <div class="d-flex align-items-center ms-3">
+                <button class="btn btn-danger btn-sm me-2" onclick="changeQty(2, -1)">-</button>
+                <span id="qty2" class="text-white">1</span>
+                <button class="btn btn-success btn-sm ms-2" onclick="changeQty(2, 1)">+</button>
+            </div>
+        </div>
+        <!-- Panier -->
+        <div class="panier text-white mt-4 p-3 rounded">
+            <div class="d-flex justify-content-between">
+                <div>Montant des plats</div>
+                <div id="subtotal">19 000f</div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div>Frais de livraison</div>
+                <div>1 500f</div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div>Remise ou réduction</div>
+                <div>500f</div>
+            </div>
+            <hr class="bg-white" />
+            <div class="d-flex justify-content-between fw-bold fs-5">
+                <div>Total</div>
+                <div id="total">20 000f</div>
+            </div>
+
+            <div>
+                <button class="btn-order w-100 mt-3 fw-bold" onclick="passerCommande()">Passer ma commande !</button>
+            </div>
+
+
+            <button class="btn-order w-100 mt-3 fw-bold" onclick="passerCommande()">Passer ma commande !</button>
+        </div>
+
+    </section>
+    <script src="/frontend/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
+
+
+
+
+
