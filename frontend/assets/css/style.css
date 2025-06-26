@@ -84,8 +84,8 @@ header {
 }
 
 .panier {
-    background-color: #45200a ;
-
+    background-color: #45200a;
+}
 
 .gallery-image ul {
     position: sticky;
@@ -126,8 +126,9 @@ h4 {
 
 body {
     font-family: Arial, sans-serif;
-    
-=======
+
+}
+
 .testimonial-role {
     font-size: 0.85rem;
     color: gray;
