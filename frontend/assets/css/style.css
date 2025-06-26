@@ -83,6 +83,10 @@ header {
 
 }
 
+.panier {
+    background-color: #45200a ;
+
+
 .gallery-image ul {
     position: sticky;
     bottom: 0;
@@ -93,6 +97,7 @@ header {
     -webkit-backdrop-filter: blur(10px);
     /* pour Safari */
     border: 1px solid rgba(255, 255, 255, 0.18);
+
     border-radius: 15px;
     padding: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -118,6 +123,11 @@ h4 {
     font-style: normal;
 }
 
+
+body {
+    font-family: Arial, sans-serif;
+    
+=======
 .testimonial-role {
     font-size: 0.85rem;
     color: gray;
@@ -149,6 +159,7 @@ h4 {
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
+
 }
 
 .btn-green {
