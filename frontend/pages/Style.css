@@ -1,0 +1,369 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+  background-color: rgb(236, 191, 107);
+}
+
+ul{  
+    width: 100%;
+}
+
+li{
+    width: 50%;
+    border-left: 1px  rgb(236, 191, 107) solid;
+}
+
+
+ a{
+    font-weight: bold;
+ }
+
+ /* p{
+    color: #45200a;
+    font-weight: bold;
+    font-size: 25px;
+    /* margin: 35px; */
+ 
+
+ .bar{
+  background-color: #f68712;
+  width: 70px;
+  height: 5px;
+  border-radius: 50px;
+  margin-left: 35px;
+}
+
+input{
+    background-color: rgb(236, 191, 107);
+    width: 90%;
+    margin: 15px;
+    padding: 15px;
+    border: none;
+}
+
+form{
+    border: 1px solid grey;
+    margin: 25px;
+}
+
+.btn{
+   background-color: rgb(236, 191, 107); 
+    padding: 15px;
+    color: #45200a;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #eba881;
+}
+
+.propos p{
+    font-size: 20px;
+}
+
+.propos h2{
+    font-size: 20px;
+    margin-left: 30px; 
+}
+
+.avis h2{
+    margin-left: 30px; 
+    font-size: 35px;
+    color: #45200a;
+}
+
+.avis li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #45200a;
+}
+
+img{
+    width: 75px;
+}
+
+.cmd p{
+    color: #45200a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ordonneé ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    border: 1px solid black;
+    width: 60%;
+    padding: 10px;
+    background-color: rgb(238, 235, 235);
+}
+
+.ordonneé li{
+    background-color: rgb(236, 191, 107);
+    text-align: center;
+    color: #45200a;
+    font-weight: bold;
+    /* width: 170px; */
+}
+
+.ordonneé{
+    margin-top: 40px;
+    padding: 15px;
+}
+
+.bande-maron{
+    background-color: rgb(236, 191, 107);
+    width: 59%;
+    margin-left: 13px;
+    padding: 10px;
+}
+
+.bande-maron h4{
+    color: #45200a;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.section-menu{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 15px;
+}
+.descrption{
+    display: flex;
+    gap: 5%; 
+}
+
+.img1{
+    width: 30%;
+}
+
+.img1 img{
+    width: 100%;
+}
+
+.img2{
+    width: 36%;
+    
+}
+
+.img2 img{
+    width: 100%;
+}
+
+.img3{
+    width: 50%;
+}
+
+.img3 img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.img4{
+    width: 36%;
+    
+}
+
+.img4 img{
+    width: 100%;
+     height: 210px;
+}
+
+.img5{
+    width: 36%;
+    
+}
+
+.img5 img{
+    width: 100%;
+     height: 210px;
+}
+
+.img6{
+    width: 30%; 
+}
+
+.img6 img{
+    width: 100%;
+     height: 210px;
+}
+.img7{
+    width: 30%;
+    
+}
+
+.img7 img{
+    width: 100%;
+     height: 200px;
+}
+
+.img8{
+    width: 33%;
+    
+}
+
+.img8 img{
+    width: 100%;
+     height: 210px;
+}
+.img9{
+    width: 31%;
+}
+
+.img9 img{
+    width: 100%;
+     height: 210px;
+}
+.img10{
+    width: 31%;
+    
+}
+
+.img10 img{
+    width: 100%;
+     height: 210px;
+}
+.img11{
+    width: 31%;
+    
+}
+.img12{
+    width: 31%;
+    
+}
+
+.img12 img{
+    width: 100%;
+     height: 210px;
+}
+
+.img11 img{
+    width: 100%;
+     height: 210px;
+}
+
+.img12{
+    width: 31%;
+    
+}
+
+.img12 img{
+    width: 100%;
+     height: 210px;
+}
+
+.img13{
+    width: 31%;
+    
+}
+
+.img13 img{
+    width: 100%;
+     height: 210px;
+}
+.img14{
+    width: 31%;
+    
+}
+
+.img14 img{
+    width: 100%;
+     height: 210px;
+}
+.img15{
+    width: 31%;
+    
+}
+
+.img15 img{
+    width: 100%;
+     height: 210px;
+}
+
+.img16{
+    width: 31%;
+    
+}
+
+.img16 img{
+    width: 100%;
+     height: 200px;
+}
+.img17{
+    width: 35%;
+    
+}
+
+.img17 img{
+    width: 100%;
+     height: 210px;
+}
+.plat1{
+    display: flex;
+    flex-direction: column;
+}
+
+.plat1 p{
+    font-size: 12px;
+    color: #45200a;
+    font-weight: bold;
+}
+.plat1 h3{
+    color: #45200a;
+}
+.plat1 span{
+    color: #45200a;
+    font-weight: bold;
+}
+
+.plat1 button{
+    width: 40%;
+    color: white;
+    background-color: #f68712;
+    border: none;
+    margin-top: 5%;
+}
+.plat1 button a{
+    text-decoration: none;
+    color: #45200a;
+}
+
+.plat1 button:hover{
+    background-color: #45200a;
+}
+.plat1 button a:hover{
+    color: white;
+}
+
+.touche{
+    /* background-color: #45200a; */
+    text-align: end;
+    display: flex;
+}
+.touche button{
+    background-color: #45200a;
+    color: white;
+}
+.resto {
+    width: 35%;
+     position: absolute;
+    top: 43%;
+    left: 65%;
+}
+.resto img{
+    height: 1450PX;
+    width: 100%;
+   object-fit: cover;
+    
+}
