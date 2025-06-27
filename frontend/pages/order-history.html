@@ -11,6 +11,38 @@
 </head>
 
 <body style="background-color: #222;">
+    <header class=" p-3 position-sticky">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="nav-afric container-fluid ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/image 40/1.png" alt="" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent" style="flex-grow: 0;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 g-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/frontend/index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/frontend/pages/restaurants.html">restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/frontend/pages/login.html">mon profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/frontend/pages/login.html">s'incrire avec google</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <section class="container p-3">
         <h2 class="mb-4 fw-bold text-center text-white">Détail de la commande</h2>
@@ -79,12 +111,11 @@
                 <div id="total">20 000f</div>
             </div>
 
-            <div>
-                <button class="btn-order w-100 mt-3 fw-bold" onclick="passerCommande()">Passer ma commande !</button>
-            </div>
 
 
-            <button class="btn-order w-100 mt-3 fw-bold" onclick="passerCommande()">Passer ma commande !</button>
+
+            <button class="btn-order w-100 mt-3 fw-bold" onclick="passerCommande()"><a
+                    href="/frontend/pages/paiement.html">Passer ma commande !</a></button>
         </div>
 
     </section>
