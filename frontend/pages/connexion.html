@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="connexion.css">
+  <title>Formulaire de Connexion</title>
+</head>
+<body>
+
+  <form class="login-form" id="loginForm">
+    <h2>Connexion</h2>
+
+    <input type="text" id="username" placeholder="Nom d'utilisateur">
+    <div class="error" id="userError"></div>
+
+    <input type="password" id="password" placeholder="Mot de passe">
+    <div class="error" id="passError"></div>
+
+    <div><p><a href="#">mot de passe oublié ?</a></p></div>
+
+   <div><button type="submit">Se connecter</button></div>
+  </form>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+    const userError = document.getElementById('userError');
+    const passError = document.getElementById('passError');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Empêche l'envoi du formulaire
+
+      let valid = true;
+
+      if (username.value.trim() === '') {
+        userError.textContent = "Nom d'utilisateur requis";
+        valid = false;
+      } else {
+        userError.textContent = "";
+      }
+
+      if (password.value.trim() === '') {
+        passError.textContent = "Mot de passe requis";
+        valid = false;
+      } else {
+        passError.textContent = "";
+      }
+
+      if (valid) {
+        alert("Connexion réussie !");
+        // Tu peux rediriger ici vers une autre page ou envoyer les données au serveur
+      }
+    });
+  </script>
+
+</body>
+</html>

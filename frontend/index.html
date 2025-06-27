@@ -6,76 +6,432 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Food Delivery</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="/frontend/assets/css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--  CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 </head>
 
 <body>
 
+
     <!-- Header -->
-    <header class="bg-light p-3 shadow-sm">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h4">🍔 FoodDelivery</h1>
-            <nav>
-                <a href="#" class="me-3 text-decoration-none">Accueil</a>
-                <a href="#" class="me-3 text-decoration-none">Restaurants</a>
-                <a href="#" class="text-decoration-none">Mon Profil</a>
-            </nav>
-        </div>
+    <header class=" p-3 position-sticky">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="nav-afric container-fluid ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/image 40/1.png" alt="" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent" style="flex-grow: 0;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 g-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/frontend/pages/restaurants.html">restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/frontend/pages/login.html">mon profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/frontend/pages/login.html">s'incrire avec google</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
     </header>
 
+    <section class="section-acceuil">
+        <video class="video-background" autoplay muted loop>
+            <source src="/frontend/assets/images/vid afric.mp4" type="video/mp4">
+
+        </video>       
+
+    </section>
+
+
     <!-- Section principale -->
-    <main class="container mt-5">
-        <h2 class="mb-4">Restaurants Populaires</h2>
+     <section class="slider container mt-5">
+        <h2 class="mb-4 " style="color: #45200a;">Restaurants Populaires</h2>
+        <div id="carouselRestaurants" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Les restaurants populaires -->
-            <div class="col">
-                <div class="card">
-                    <img src="..\Images\resto1.JPG" class="card-img-top " alt="Restaurant">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger Paradise</h5>
-                        <p class="card-text">⭐ 4.8 - Livraison gratuite</p>
-                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://i.pinimg.com/736x/a9/8b/f8/a98bf8764f37c69822d19d16e6aabdea.jpg" class="card-img-top "
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #45200a;">MAFE</h5>
+                                        <p class="card-text" style="color: #45200a;">⭐ 4.8 - Livraison gratuite partout a Dakar</p>
+                                        <a href="../frontend/pages/menu.html" class="btn"
+                                            style="background-color: #ff8c0081;">Voir
+                                            le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ajoute 2 cartes supplémentaires ici (total : 3 cartes par slide) -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://i.pinimg.com/736x/96/2d/bf/962dbf7bf690d9822c84016dcb5a054f.jpg" class="card-img-top" style="height: 350px;"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #45200a;">Burger Palace</h5>
+                                        <p class="card-text" style="color: #45200a;">⭐ 4.7 - Livraison 1000 FCFA</p>
+                                        <a href="frontend/pages/menu.html" class="btn"
+                                            style="background-color: #ff8c0081;">Voir
+                                            le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://i.pinimg.com/736x/7b/e1/8b/7be18b2f081158e10a2380ba0a581b71.jpg" class="card-img-top" style="height: 350px;"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #45200a;">Tasty Grill</h5>
+                                        <p class="card-text" style="color: #45200a;">⭐ 4.9 - Livraison rapide</p>
+                                        <a href="frontend/pages/menu.html" class="btn"
+                                            style="background-color: #ff8c0081;">Voir
+                                            le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col">
-                <div class="card">
-                    <img src="..\Images\resto1.JPG" class="card-img-top " alt="Restaurant">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger Paradise</h5>
-                        <p class="card-text">⭐ 4.8 - Livraison gratuite</p>
-                        <a href="#" class="btn btn-primary">Voir le menu</a>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../frontend/assets/images/resto2.JPG" class="card-img-top"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #45200a;">Patte</h5>
+                                        <p class="card-text" style="color: #45200a;">⭐ 4.6 - Livraison gratuite</p>
+                                        <a href="frontend/pages/menu.html" class="btn"
+                                            style="background-color: #ff8c0081;">Voir
+                                            le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Deux autres cartes ici -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../frontend/assets/images/thiep.jpeg" class="card-img-top"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #45200a;">Chez Maman</h5>
+                                        <p class="card-text" style="color: #45200a;">⭐ 5.0 - Cuisine locale</p>
+                                        <a href="frontend/pages/menu.html" class="btn"
+                                            style="background-color: #ff8c0081;">Voir
+                                            le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="../frontend/assets/images/resto1.JPG" class="card-img-top"
+                                        alt="Restaurant">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #45200a;">Locale</h5>
+                                        <p class="card-text" style="color: #45200a;">⭐ 4.3 - Livraison express</p>
+                                        <a href="frontend/pages/menu.html" class="btn"
+                                            style="background-color: #ff8c0081;">Voir
+                                            le menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-            <div class="col">
-                <div class="card">
-                    <img src="..\Images\resto1.JPG" class="card-img-top " alt="Restaurant">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger Paradise</h5>
-                        <p class="card-text">⭐ 4.8 - Livraison gratuite</p>
-                        <a href="#" class="btn btn-primary">Voir le menu</a>
+            <!-- Contrôles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRestaurants"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselRestaurants"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+     </section>
+    <main >
+        
+
+
+
+
+    </main>
+
+
+
+    <section class="slider gallery-plat section container">
+        <div class="gallery-title section-title">
+            <h2>GALLERY</h2>
+            <p>
+                <span>CHOISI TON</span>
+                <span class="description-title">MENU AFRICAIN</span>
+            </p>
+        </div>
+        <div class="gallery-image">
+            <ul class="nav nav-tabs d-flex justify-content-center aos-init aos-animate" style="color:  #45200a;">
+                <li class="nav-item">
+                    <a href="#repas" class="nav-link">
+                        <h4>Repas</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#dessert" class="nav-link">
+                        <h4>Dessert</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#jus" class="nav-link">
+                        <h4>Jus</h4>
+                    </a>
+                </li>
+
+            </ul>
+            <section id="repas" class="p-4">
+                <h3>NOS PLATS</h3>
+                <div class="row gy-5 text-center p-3">
+                    <div class="col-lg-4 menu-item border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/a9/8b/f8/a98bf8764f37c69822d19d16e6aabdea.jpg" alt=""
+                                class="menu-img img-fluid ">
+                        </a>
+                        <h4>MAFE</h4>
+                        <p class="price">3000fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/68/68/0d/68680d346cfe2fc6b5630eff11659414.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>THIEBOU DIEUN</h4>
+                        <p class="price">2500fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/7b/e1/8b/7be18b2f081158e10a2380ba0a581b71.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>DOMADA</h4>
+                        <p class="price">1000fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/92/d2/3e/92d23e0dbcb48707480ade1cbbe7f24a.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>YASSA POULET</h4>
+                        <p class="price">2000fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/a0/4a/1a/a04a1aa6a1d7b189390942edfadbf113.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>MBAXAL SALOUM</h4>
+                        <p class="price">1500fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/0b/6c/ab/0b6cab9bd11847b360f838d3b9023453.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>SOUPE KANDIA</h4>
+                        <p class="price">1000fr</p>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section id="dessert" class="p-4">
+                <h3>NOS DESSERT</h3>
+                <div class="row gy-5 text-center p-3">
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/9c/74/32/9c74323e69640aa9ed73faf31ca8efac.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>CREPE</h4>
+                        <p class="price">3000fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/80/f6/fb/80f6fbe90722e17aea3b80b07bb5628b.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>SALADE DE FRUITS</h4>
+                        <p class="price">2000fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/96/2d/bf/962dbf7bf690d9822c84016dcb5a054f.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>GATEAUX</h4>
+                        <p class="price">2500fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/69/cf/a6/69cfa6d82bda2dc58013888353b4a74b.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>SMOOTHIE</h4>
+                        <p class="price">6000fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/1a/b2/c3/1ab2c32b029f8e6845a880bf9a27597a.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>CAPCAKE</h4>
+                        <p class="price">4500fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/a9/b8/a2/a9b8a266a4c061ca6ab6af63cf2e7caa.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>ICE CREAM</h4>
+                        <p class="price">3000fr</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="jus" class="p-4">
+                <h3>NOS JUS</h3>
+                <div class="row gy-5 text-center p-3">
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/38/a8/fa/38a8fa2f73904f6e015eb65bea8405c6.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>JUS BISSAP</h4>1500fr
+                        <p class="price">$5.95</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/af/37/2c/af372cdf7d9917e28946a2f9eb5520f1.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>JUS BOUYE</h4>
+                        <p class="price">300fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/87/60/48/87604868ee64ab0ab9e6827022cf7dc7.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>JUS ORANGE</h4>
+                        <p class="price">1000fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/20/82/81/208281238c686aee33bd4e9f93f4f349.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>JUS MANGUE</h4>
+                        <p class="price">600fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/90/eb/9b/90eb9bec4c886b3fa8e8d4bf6b0f0f37.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>JUS GIGEMBRE</h4>
+                        <p class="price">1200fr</p>
+                    </div>
+                    <div class="col-lg-4 menu-item  border p-2">
+                        <a href="#" class="glightbox">
+                            <img src="https://i.pinimg.com/736x/d8/15/2f/d8152f72dc59d946aedd1bb5172c8317.jpg" alt=""
+                                class="menu-img img-fluid">
+                        </a>
+                        <h4>JUS SOW</h4>
+                        <p class="price">1000fr</p>
+                    </div>
+                </div>
+            </section>
 
         </div>
-    </main>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center p-4 mt-5">
         &copy; 2050 FoodDelivery - Tous droits réservés
     </footer>
 
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
+     
+    <!-- <script src="assets/js/script.js"></script> -->
 </body>
+<script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+//   import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/11.9.1/firebase/auth";
 
+  // Config Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyChAbAMdoqTCyyzZYKf7dcV6KGp0FANVk0",
+    authDomain: "ninja-test-dc150.firebaseapp.com",
+    projectId: "ninja-test-dc150",
+    storageBucket: "ninja-test-dc150.appspot.com", // ✅ correction ici : "firebasestorage.app" -> "appspot.com"
+    messagingSenderId: "845687913271",
+    appId: "1:845687913271:web:8dcad1dceb0548635438b2",
+    measurementId: "G-L2BR0HJ3HZ"
+  };
+
+  // Initialisation Firebase
+  const app = initializeApp(firebaseConfig);
+//   const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+
+
+  // // Fonction async pour ajouter un document
+//   async function addCity() {
+//     try {
+//       const docRef = await addDoc(collection(db, "ville"), {
+//         name: "Dakar",
+//         country: "Senegal"
+//       });
+//       console.log("Document written with ID: ", docRef.id);
+//     } catch (e) {
+//       console.error("Error adding document: ", e);
+//     }
+//   }
+
+//   addCity(); // Appel de la fonction
+</script>
 </html>
